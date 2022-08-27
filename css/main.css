@@ -1,0 +1,115 @@
+*{
+    font-family: sans-serif;
+}
+body {
+    background-color: #333;
+}
+.container{
+    background-color: #222;
+    width: 80vw;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    position: relative;
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.img img , canvas#photo{
+    max-width: 45vw;
+    max-height: 60vh;
+}
+.img .upload input{
+    display: none;
+}
+.upload label{
+    color: #fff;
+    padding: 8px 20px;
+    border: 2px #fff dashed;
+    cursor: pointer;
+}
+.filters ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    direction: rtl;
+}
+.filters ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.filters li label {
+    color: #fff;
+}
+.filters li input {
+    /* 
+        Need To Change Color
+    */
+}
+.filters ul li:last-child{
+    flex-direction: row;
+    justify-content: space-around;
+}
+.filters ul li a ,span{
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #060;
+    cursor: pointer;
+}
+#download {
+    position: relative;
+}
+#alert {
+    position: absolute;
+    background-color: #0b63c0;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 12px;
+    bottom: -250%;
+    left: 0;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    visibility:hidden;
+}
+
+/* settings */
+.download-settings{
+    background-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px 20px;
+    text-transform: capitalize;
+}
+input[type="radio"]{
+    margin-right: 20px;
+}
+.download-settings label {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}
+/* mobile */
+@media screen and (max-width:650px){
+    .container{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .img img , canvas#photo{
+        max-width: 80vw;
+        max-height: 60vh;
+    }
+    .download-settings{
+        margin-top: 60px;
+    }
+}
