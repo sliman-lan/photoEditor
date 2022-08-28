@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Photo Editor</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -51,18 +51,20 @@
                     <input type="range" id="hue-rotate"  min="0" max="350" value="0">
                 </li>
                 <li>
+                    <div class="hidden download-settings">
+                        <h2>please choose the image file type :</h2>
+                        <label for="png">PNG</label>
+                        <input type="radio" name="fileType" id="png" />
+                        <label for="jpeg">JPEG</label>
+                        <input type="radio" name="fileType" id="jpeg" />
+                        <br>    
+                    </div>
+                </li>
+                <li>
                     <a download="true" id="download">download <span id="alert">Please set the type first before download</span></a>
                     <span id="reset" onclick="resetValue()">reset</span>
                 </li>
             </ul>
-        </div>
-        <div class="hidden download-settings">
-            <h2>please choose the image file type :</h2>
-            <label for="png">PNG</label>
-            <input type="radio" name="fileType" id="png" />
-            <label for="jpeg">JPEG</label>
-            <input type="radio" name="fileType" id="jpeg" />
-            <br>
         </div>
     </div>
     <script src="./main.js"></script>
