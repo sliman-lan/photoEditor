@@ -1,1 +1,2 @@
-#### here we go 
+### photo editor in vanilla js
+###
