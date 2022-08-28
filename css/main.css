@@ -45,9 +45,6 @@ body {
     flex-direction: column;
     gap: 20px;
 }
-.filters li label {
-    color: #fff;
-}
 .filters li input {
     /* 
         Need To Change Color
